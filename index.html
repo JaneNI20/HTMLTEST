@@ -583,7 +583,7 @@
 
     document.getElementById('previewBtn').addEventListener('click', togglePreview);
     document.getElementById('downloadBtn').addEventListener('click', downloadHtml);
-    document.getElementById('shareBtn').addEventListener('click', () => sharePage().catch(() => alert('分享未完成，可使用“下载 HTML”后发送文件。')));
+    document.getElementById('shareBtn').addEventListener('click', () => sharePage().catch(() => alert('分享未完成，可使用“下载X HTML”后发送文件。')));
     document.getElementById('pngBtn').addEventListener('click', exportPng);
     document.addEventListener('keydown', event => {
       if (event.key === 'Escape' && document.body.classList.contains('preview-mode')) togglePreview();
